@@ -1,0 +1,11 @@
+Sia dato un BST di interi (ADT di prima classe). Si scriva la funzione che genera un vettore (da allocare dinamicamente, senza riallocazione) di puntatori ai nodi del BST. Il vettore di puntatori deve essere ordinato secondo questo criterio: profondità crescente e, a pari profondità, valori (dell’intero contenuto nei nodi) crescenti.
+
+La funzione deve essere richiamabile come
+
+pnodes =  BSTlevelizedNodes (b, &n);
+
+Dove b è il BST, pnodes il (vettore) risultato e n il numero di nodi
+
+E' richiesta la definizione dei tipo BST e del nodo.
+
+Non è ammesso l'uso di funzioni di libreria.

@@ -1,0 +1,23 @@
+Sia dato un tipo ADT di prima classe SLIST (lista ordinata) con item corrispondente alla typedef qui riportata
+
+typedef struct {char name[16]; int val;} Item;
+
+L’item consiste quindi in un nome (contenente solo caratteri alfabetici) a cui è associato un valore intero. Gli item in lista sono ordinati in modo crescente in base al campo name.
+
+Scrivere una funzione SLISTmerge, avente il prototipo seguente
+
+SLIST SLISTmerge(SLIST a, SLIST b);
+
+I due parametri a e b sono liste ordinate. Si noti che è possibile che una stessa stringa compaia come name in più di un item sia in a che in b (o in entrambe).
+
+La funzione genera una terza lista, i cui item contengono (nei campi name) tutte e sole le stringhe presenti in a e in b. Ma non sono possibili ripetizioni: quando una stringa compare più volte in a e/o in b, la si riporta una volta sola nel risultato, associando come campo val la somma dei valori associati alla stringa in a e/o b.
+
+Si fornisca la definizione del tipo SLIST, del nodo in lista, e si scriva la funzione. Qualora si usi una funzione newNode, non è necessario scriverla.
+
+Esempio:
+
+a)  (“roma”, 7), (“torino”, 4), (“zagabria”, 5)
+
+b)     (“roma”, 3), (“torino”, 3), (“torino”, 2), (“venezia”, 10)
+
+Risultato: (“roma”, 10), (“torino”, 9), (“venezia”, 10), (“zagabria”, 5)

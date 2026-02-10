@@ -1,0 +1,7 @@
+E’ dato un elenco di parole senza duplicati (vettore di stringhe).
+
+Le stringhe in elenco posso essere utilizzate per generare stringhe più lunghe mediante concatenazione. Una concatenazione è una stringa generata dalla sequenza ordinata di tutte o parte delle stringhe in elenco prese al più una volta.
+
+Si scriva una funzione bestConcat, che, dato l’elenco, generi la stringa più lunga ottenibile mediante concatenazione, rispettando un vincolo: date due parole consecutive nella sequenza, se la prima termina con vocale, la seconda non puo’ iniziare con vocale. Se la prima termina con consonante, la seconda non puo’ iniziare con consonante. Ai fini della bontà del risultato la lunghezza si misura in numero di caratteri (quindi non di parole).
+
+Nota bene: le due domande a seguire NON sono facoltative. Assicurarsi di rispondere a tutte le richieste.
